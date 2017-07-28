@@ -3,6 +3,9 @@
 ## **What is node js** 
  ####   A JavaScript runtime environment running Google Chrome’s V8 engine*
  
+ Node.js is the leading tool for creating server applications in JavaScript, the world’s most popular programming language. Offering the functionality of both a web server and an application server, Node.js is now considered a key tool for all kinds of microservices‑based development and delivery. 
+ 
+ 
  Runs over the command line  
  
   Designed for high concurrency
@@ -63,5 +66,10 @@ Platform | Number of request per second
 PHP ( via Apache) | 3187,27
 Static ( via Apache ) | 2966,51
 Node.js |  5569,30
+
+
+# 5 Performance Tips for Node.js Applications
+
+
 
  
