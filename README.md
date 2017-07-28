@@ -1,21 +1,3 @@
- - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-
-def foo():
-    if not bar:
-       
-        
-        
-     I think you should use an
-    
-
- 
-
-
-
  ## **What is node js** 
  ###   A JavaScript runtime environment running Google Chrome’s V8 engine*
  
@@ -80,6 +62,4 @@ PHP ( via Apache) | 3187,27
 Static ( via Apache ) | 2966,51
 Node.js |  5569,30
 
-
-`<addr>` element here instead.
- return True
+ 
