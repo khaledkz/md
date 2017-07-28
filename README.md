@@ -56,6 +56,14 @@ I/O Example
 
 Threads VS Event-driven
 
+Platform|Asynchronous Event-driven
+------------ | -------------
+Lock application / request with listener-workers threads | only one thread, which repeatedly fetches an event
+Using incoming-request model| Using queue and then processes it
+multithreaded server might block the request which might involve multiple events| manually saves state and then goes on to process the next event
+Using context switching|no contention and no context switches
+Using multithreading environments where listener and workers threads are used frequently to take an incoming-request lock|Using asynchronous I/O facilities (callbacks, not poll/select or O_NONBLOCK) environments
+
  
 
  
@@ -65,6 +73,7 @@ Threads VS Event-driven
 1. It can handle tons of concurrent requests
 1. It's written in JavaScript (which means you can use the same code server side and client side)
 
+Platform|Number of request per second
 ------------ | -------------
 PHP ( via Apache) | 3187,27
 Static ( via Apache ) | 2966,51
