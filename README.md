@@ -1,15 +1,5 @@
- 
- 
-*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-_You **can** combine them_
- 
- # **What is node js** 
- *TA JavaScript runtime environment running Google Chrome’s V8 engine*
+  # **What is node js** 
+ ## *A JavaScript runtime environment running Google Chrome’s V8 engine*
  
  Runs over the command line  
  
