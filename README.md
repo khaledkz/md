@@ -56,7 +56,8 @@ I/O Example
 1. It can handle tons of concurrent requests
 1. It's written in JavaScript (which means you can use the same code server side and client side)
 
-First Header | Second Header
+Platform | Number of request per second
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+PHP ( via Apache) | 3187,27
+Static ( via Apache ) | 2966,51
+Node.js |  5569,30
