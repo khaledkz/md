@@ -1,4 +1,11 @@
- ## **What is node js** 
+ ```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+
+## **What is node js** 
  ###   A JavaScript runtime environment running Google Chrome’s V8 engine*
  
  ### Runs over the command line  
@@ -63,3 +70,4 @@ Static ( via Apache ) | 2966,51
 Node.js |  5569,30
 
  
+```
