@@ -1,5 +1,5 @@
 ![GitHub Logo](/md.jpg)
-Format: ![Alt Text](url)
+ 
 
 #Hello World
 ##Hello two
@@ -7,5 +7,4 @@ Format: ![Alt Text](url)
 *this is italic
 
 ![GitHub Logo](md.jpg)
-Format: ![Alt Text](url)
-
+ 
