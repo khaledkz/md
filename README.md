@@ -69,19 +69,19 @@ Static ( via Apache ) | 2966,51
 Node.js |  5569,30
 
 
-Node.js is a great tool for creating and running application logic that produces the core, variable content for your web page. But it’s not so great for serving static content – images and JavaScript files, for example – or load balancing across multiple servers.
+#### Node.js is a great tool for creating and running application logic that produces the core, variable content for your web page. But it’s not so great for serving static content – images and JavaScript files, for example – or load balancing across multiple servers.
 
-To get the most out of Node.js, you need to cache static content, to proxy and load balance among multiple application servers, and to manage port contention between clients, Node.js, and helpers, such as servers running Socket.IO. NGINX can be used for all of these purposes, making it a great tool for Node.js performance tuning.
-
-
-Implement a reverse proxy server
-Cache static files
-Load balance traffic across multiple servers
-Proxy WebSocket connections
-Implement SSL/TLS and HTTP/2
+##### To get the most out of Node.js, you need to cache static content, to proxy and load balance among multiple application servers, and to manage port contention between clients, Node.js, and helpers, such as servers running Socket.IO. NGINX can be used for all of these purposes, making it a great tool for Node.js performance tuning.
 
 
-1 – Implement a Reverse Proxy Server
+1. Implement a reverse proxy server
+1. Cache static files
+1. Load balance traffic across multiple servers
+1. Proxy WebSocket connections
+1. Implement SSL/TLS and HTTP/2
+
+
+## 1 – Implement a Reverse Proxy Server
 
 We at NGINX, Inc. are always a bit horrified when we see application servers directly exposed to incoming Internet traffic, used at the core of high‑performance sites. This includes many WordPress‑based sites, for example, as well as Node.js sites.
 
@@ -99,7 +99,7 @@ Mitigating DoS attacks
 
 
 
-Tip 2 – Cache Static Files
+##  2 – Cache Static Files
 
 As usage of a Node.js‑based site grows, the server will start to show the strain. There are two things you want to do at this point:
 
@@ -108,14 +108,14 @@ Make it easy to add application servers and load balance among them
 This is actually easy to do. Begin by implementing NGINX as a reverse proxy server, as described in the previous tip. This makes it easy to implement caching, load balancing (when you have multiple Node.js servers), and more.
 
 
-Tip 3 – Implement a Node.js Load Balancer
+##  3 – Implement a Node.js Load Balancer
 
 The real key to high – that is, nearly unlimited – performance for Node.js applications is to run multiple application servers and balance loads across all of them.
 
 Node.js load balancing can be particularly tricky because Node.js enables a high level of interaction between JavaScript code running in the web browser and JavaScript code running on the Node.js application server, with JSON objects as the medium of data exchange. This implies that a given client session runs continually on a specific application server, and session persistence is inherently difficult to achieve with multiple application servers.
 
 
-Tip 4 – Proxy WebSocket Connections
+##  4 – Proxy WebSocket Connections
 
 HTTP, in all versions, is designed for “pull” communications, where the client requests files from the server. WebSocket is a tool to enable “push” and “push/pull” communications, where the server can proactively send files that the client hasn’t requested.
 
@@ -124,7 +124,7 @@ The WebSocket protocol makes it easier to support more robust interaction betwee
 WebSocket protocol has a robust JavaScript interface and as such is a natural fit for Node.js as the application server – and, for web applications with moderate transaction volumes, as the web server as well. When transaction volumes rise, it makes sense to insert NGINX between clients and the Node.js web server, using NGINX or NGINX Plus to cache static files and to load balance among multiple application servers.
 
 
-Tip 5 – Implement SSL/TLS and HTTP/2
+##  5 – Implement SSL/TLS and HTTP/2
 
 
 More and more sites are using SSL/TLS to secure all user interaction on the site. It’s your decision whether and when to make this move, but if and when you do, NGINX supports the transition in two ways:
