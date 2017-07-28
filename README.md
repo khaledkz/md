@@ -70,11 +70,15 @@ Node.js |  5569,30
 1. It can handle tons of concurrent requests
 1. It's written in JavaScript (which means you can use the same code server side and client side)
 
-Platform | Number of request per second
+  
 ------------ | -------------
-PHP ( via Apache) | 3187,27
-Static ( via Apache ) | 2966,51
-Node.js |  5569,30
+Platform)    |Number of request per second
+------------ | -------------
+Lock application / request with listener-workers threads |  only one thread, which repeatedly fetches an event
+Using incoming-request model  |  Using queue and then processes it
+multithreaded server might block the request which might involve multiple events|manually saves state and then goes on to process the next event
+Using context switching|no contention and no context switches
+Using multithreading environments where listener and workers threads are used frequently to take an incoming-request lock|Using asynchronous I/O facilities (callbacks, not poll/select or O_NONBLOCK) environments
 
 
 #### Node.js is a great tool for creating and running application logic that produces the core, variable content for your web page. But it’s not so great for serving static content – images and JavaScript files, for example – or load balancing across multiple servers.
