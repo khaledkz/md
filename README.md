@@ -1,14 +1,17 @@
   # **What is node js** 
- ## *A JavaScript runtime environment running Google Chrome’s V8 engine*
+ ## * *A JavaScript runtime environment running Google Chrome’s V8 engine*
  
- Runs over the command line  
+ ## *Runs over the command line  
  
- Designed for high concurrency
- Without threads or new processes
- Never blocks, not even for I/O
+ ## *Designed for high concurrency
+  -Without threads or new processes
+ ## *Never blocks, not even for I/O
  
- Uses the CommonJS framework
- Making it a little closer to a real OO language
+ ## *Uses the CommonJS framework
+  * Making it a little closer to a real OO language
+  
+  
+  
  Concurrency: The Event Loop
  
  Instead of threads Node uses an event loop with a stack
