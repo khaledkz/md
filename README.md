@@ -6,7 +6,7 @@
 
 def foo():
     if not bar:
-        return True
+       
         
         
      I think you should use an
@@ -82,3 +82,4 @@ Node.js |  5569,30
 
 
 `<addr>` element here instead.
+ return True
