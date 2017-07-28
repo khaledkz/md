@@ -1,4 +1,3 @@
-# md
 ![GitHub Logo](/md.jpg)
 Format: ![Alt Text](url)
 
