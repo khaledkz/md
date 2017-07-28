@@ -1,11 +1,11 @@
  
  
+*This text will be italic*
+_This will also be italic_
 
-#Hello World#
+**This text will be bold**
+__This will also be bold__
 
-##Hello two##
-
-*this is italic*
-
+_You **can** combine them_
 ![GitHub Logo](md.jpg)
  
