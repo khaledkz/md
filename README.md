@@ -54,6 +54,14 @@ I/O Example
   Server-side JS deals mostly in files/databases, no DOM
  JS Dom project for Node works for simple tasks, but not much else
 
+Threads VS Event-driven
+
+Threads          Asynchronous Event-driven
+------------ | -------------
+PHP ( via Apache) | 3187,27
+Static ( via Apache ) | 2966,51
+Node.js |  5569,30
+
 
  
 ## Node Js VS Apache
