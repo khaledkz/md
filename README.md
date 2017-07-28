@@ -1,7 +1,7 @@
  
 
  ## **What is node js** 
- ### * > A JavaScript runtime environment running Google Chrome’s V8 engine*
+ ###  > A JavaScript runtime environment running Google Chrome’s V8 engine*
  
  ### Runs over the command line  
  
@@ -10,7 +10,7 @@
  ### Never blocks, not even for I/O
  
  ### Uses the CommonJS framework
-  > Making it a little closer to a real OO language
+   Making it a little closer to a real OO language
   
   
   
