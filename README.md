@@ -10,7 +10,6 @@ def foo():
         
         
      I think you should use an
-`<addr>` element here instead.
     
 
  
@@ -80,3 +79,6 @@ Platform | Number of request per second
 PHP ( via Apache) | 3187,27
 Static ( via Apache ) | 2966,51
 Node.js |  5569,30
+
+
+`<addr>` element here instead.
